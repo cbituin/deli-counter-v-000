@@ -23,3 +23,13 @@ def take_a_number(customersWaiting, customerName)
   currentPosition+=1
   puts "Welcome, #{customerName}. You are number #{currentPosition} in line."
 end
+
+  def now_serving(customersWaiting)
+    firstPerson = customersWaiting.shift
+    if customersWaiting > 0
+      puts "Currently serving #{firstPerson}."
+    else
+      puts "There is nobody waiting to be served!"
+    end
+    
+  end
