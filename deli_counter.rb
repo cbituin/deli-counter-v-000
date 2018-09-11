@@ -26,7 +26,7 @@ end
 
   def now_serving(customersWaiting)
     firstPerson = customersWaiting.shift
-    if customersWaiting >= 0
+    if customersWaiting >= 1
       puts "Currently serving #{firstPerson}."
     else
       puts "There is nobody waiting to be served!"
